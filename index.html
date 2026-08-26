@@ -18,15 +18,17 @@
 
   <header class="site-header">
     <a class="brand" href="#" aria-label="EURILĖ">
-      <svg class="brand-mark" viewBox="0 0 70 76" aria-hidden="true">
-        <path d="M8 67V30L35 10l27 20v37" />
-        <path d="M18 67V36l17-13 17 13v31" />
-        <path d="M28 67V43l7-6 7 6v24" />
+      <svg class="brand-logo" viewBox="0 0 190 215" aria-hidden="true">
+        <g fill="none" stroke="#5b351d" stroke-width="15" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M28 150V62L95 18l67 44v88"/>
+          <path d="M52 150V80l43-28 43 28v70"/>
+          <path d="M76 150v-51l19-13 19 13v51"/>
+        </g>
+        <text x="95" y="183" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+              font-size="39" font-weight="700" letter-spacing="3" fill="#080808">EURILE</text>
+        <text x="95" y="207" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+              font-size="12" font-weight="700" letter-spacing="5.5" fill="#080808">WOOD SOUL</text>
       </svg>
-      <span class="brand-text">
-        <strong>EURILĖ</strong>
-        <small>WOOD SOUL</small>
-      </span>
     </a>
 
     <nav class="main-nav" aria-label="Pagrindinė navigacija">
@@ -39,9 +41,22 @@
 
     <div class="header-actions">
       <div class="search-pill"><span>⌕</span> Paieška</div>
-      <span class="action-icon">⇄<i>0</i></span>
-      <span class="action-icon">♡<i>0</i></span>
-      <span class="action-icon">♧<i>0</i></span>
+      <button class="action-icon" aria-label="Palyginimas">
+        <svg viewBox="0 0 28 28" aria-hidden="true">
+          <path d="M5 8h15M16 4l4 4-4 4M23 20H8M12 16l-4 4 4 4"/>
+        </svg><i>0</i>
+      </button>
+      <button class="action-icon" aria-label="Mėgstami">
+        <svg viewBox="0 0 28 28" aria-hidden="true">
+          <path d="M14 24S4 18.2 4 10.7A5.7 5.7 0 0 1 14 7a5.7 5.7 0 0 1 10 3.7C24 18.2 14 24 14 24Z"/>
+        </svg><i>0</i>
+      </button>
+      <button class="action-icon" aria-label="Pirkinių krepšelis">
+        <svg viewBox="0 0 28 28" aria-hidden="true">
+          <path d="M6 9h16l-1.2 15H7.2L6 9Z"/>
+          <path d="M10 10V7a4 4 0 0 1 8 0v3"/>
+        </svg><i>0</i>
+      </button>
     </div>
 
     <button class="mobile-menu" aria-label="Meniu">☰</button>
@@ -56,6 +71,34 @@
           Papasakokite, kokio medinio pastato ieškote. Atsakykite į kelis trumpus klausimus,
           o mes galėsime geriau suprasti jūsų poreikį.
         </p>
+      </div>
+    </section>
+
+    <section class="contact-info-section">
+      <div class="contact-info-inner">
+        <div class="contact-copy">
+          <p class="eyebrow">SUSISIEKIME</p>
+          <h2>Turite klausimų?<br><em>Esame pasiruošę padėti.</em></h2>
+          <p>Jeigu jau žinote, ko ieškote, užpildykite užklausą žemiau. O jei norite pasikalbėti prieš priimdami sprendimą – susisiekite tiesiogiai.</p>
+        </div>
+        <div class="contact-cards">
+          <a class="contact-card" href="tel:+37063355501">
+            <span class="contact-card-icon">☎</span>
+            <span><small>Telefonas</small><strong>+370 633 55501</strong></span>
+          </a>
+          <a class="contact-card" href="mailto:info@eurile.lt">
+            <span class="contact-card-icon">@</span>
+            <span><small>El. paštas</small><strong>info@eurile.lt</strong></span>
+          </a>
+          <div class="contact-card">
+            <span class="contact-card-icon">⌖</span>
+            <span><small>Adresas</small><strong>Jaukoji g. 29, Kopūstų km.<br>Klaipėdos raj., LT96334</strong></span>
+          </div>
+          <div class="contact-card">
+            <span class="contact-card-icon">◷</span>
+            <span><small>Darbo laikas</small><strong>I–V: 8:00–17:00<br>VI: 9:00–14:00</strong></span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -289,7 +332,10 @@
 
   <footer class="site-footer">
     <div class="footer-brand">
-      <div class="footer-logo">EURILĖ <span>WOOD SOUL</span></div>
+      <div class="footer-logo">
+        <span class="footer-logo-main">EURILE</span>
+        <span class="footer-logo-sub">WOOD SOUL</span>
+      </div>
       <h3>UAB „EURILĖ“</h3>
       <p>Jaukoji g. 29, Kopūstų km.<br>Klaipėdos raj. LT96334, Lietuva</p>
       <p>El. paštas: info@eurile.lt<br>Mob. tel.: +370 633 55501</p>
