@@ -19,15 +19,15 @@ button,input,select,textarea{font:inherit}
 button{cursor:pointer}
 .topbar{height:42px;padding:0 5.2%;display:flex;align-items:center;justify-content:space-between;font-size:14px;background:rgba(247,246,242,.96);border-bottom:1px solid rgba(0,0,0,.03)}
 .topbar a{font-weight:500}
-.site-header{height:88px;background:#fff;display:flex;align-items:center;padding:0 5.2%;gap:32px;border-bottom:1px solid #eee;position:sticky;top:0;z-index:20}
-.brand{display:flex;align-items:center;width:88px;height:78px;flex:0 0 88px}
-.brand-logo{display:block;width:82px;height:93px;transform:translateY(3px)}
-.main-nav{display:flex;align-items:center;gap:31px;font-size:15px;font-weight:500;flex:1}
-.main-nav a{padding:34px 0;position:relative}
+.site-header{height:88px;background:#fff;display:flex;align-items:center;padding:0 5.2%;gap:0;border-bottom:1px solid #eee}
+.brand{display:flex;align-items:center;width:300px;height:88px;flex:0 0 300px}
+.brand-logo{display:block;width:66px;height:75px;object-fit:contain;transform:none}
+.main-nav{display:flex;align-items:center;gap:39px;flex:0 0 auto;height:100%;font-size:15px;font-weight:500}
+.main-nav a{padding:34px 0;position:relative;white-space:nowrap}
 .main-nav a.active{color:var(--orange)}
 .main-nav a.active:after{content:"";position:absolute;left:0;right:0;bottom:24px;height:2px;background:var(--orange)}
-.header-actions{display:flex;align-items:center;gap:22px}
-.search-pill{height:45px;width:260px;border:1px solid #ddd;border-radius:25px;color:#999;display:flex;align-items:center;gap:11px;padding:0 17px}
+.header-actions{display:flex;align-items:center;gap:22px;margin-left:auto}
+.search-pill{height:45px;width:270px;border:1px solid #ddd;border-radius:25px;color:#999;display:flex;align-items:center;gap:11px;padding:0 17px}
 .search-pill span{font-size:27px;line-height:0}
 .action-icon{position:relative;width:34px;height:34px;border:0;background:transparent;padding:0;display:grid;place-items:center;color:#171717}
 .action-icon svg{width:27px;height:27px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
@@ -115,7 +115,7 @@ input:focus,select:focus,textarea:focus{border-color:#b88965;box-shadow:0 0 0 3p
   .site-header{height:72px;padding:0 20px;justify-content:space-between}
   .main-nav,.header-actions{display:none}
   .mobile-menu{display:block}
-  .brand{min-width:auto}
+  .brand{width:auto;flex:0 0 auto;min-width:auto}.brand-logo{width:62px;height:70px}
   .page-intro{padding:60px 25px}
   .page-intro h1{font-size:48px}
   .intro-copy{font-size:16px}
