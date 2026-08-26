@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Užklausa | EURILĖ Wood Soul</title>
+  <meta name="description" content="EURILĖ individualaus pasiūlymo užklausos demo">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <div>Įgyvendinti projektai</div>
+    <a href="tel:+37063355501">☎ &nbsp;+370 633 55501</a>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="EURILĖ">
+      <svg class="brand-mark" viewBox="0 0 70 76" aria-hidden="true">
+        <path d="M8 67V30L35 10l27 20v37" />
+        <path d="M18 67V36l17-13 17 13v31" />
+        <path d="M28 67V43l7-6 7 6v24" />
+      </svg>
+      <span class="brand-text">
+        <strong>EURILĖ</strong>
+        <small>WOOD SOUL</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Pagrindinė navigacija">
+      <a href="#">Pradinis</a>
+      <a href="#">Apie mus</a>
+      <a href="#">El. parduotuvė</a>
+      <a href="#">Verslui</a>
+      <a class="active" href="#">Kontaktai</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="search-pill"><span>⌕</span> Paieška</div>
+      <span class="action-icon">⇄<i>0</i></span>
+      <span class="action-icon">♡<i>0</i></span>
+      <span class="action-icon">♧<i>0</i></span>
+    </div>
+
+    <button class="mobile-menu" aria-label="Meniu">☰</button>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div class="intro-inner">
+        <p class="eyebrow">EURILĖ · WOOD SOUL</p>
+        <h1>Gaukite individualų<br><em>pasiūlymą</em></h1>
+        <p class="intro-copy">
+          Papasakokite, kokio medinio pastato ieškote. Atsakykite į kelis trumpus klausimus,
+          o mes galėsime geriau suprasti jūsų poreikį.
+        </p>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="form-shell">
+        <div class="form-top">
+          <div>
+            <span class="form-kicker">UŽKLAUSA</span>
+            <h2>Suplanuokime jūsų projektą</h2>
+          </div>
+          <div class="step-counter"><span id="currentStep">1</span> / <span id="totalSteps">4</span></div>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <form id="inquiryForm" novalidate>
+          <!-- STEP 1 -->
+          <div class="step active" data-step="1">
+            <p class="step-label">01 · Pagrindinė informacija</p>
+            <h3>Ko ieškote?</h3>
+            <p class="step-help">Pasirinkite artimiausią variantą.</p>
+
+            <div class="choice-grid choice-grid-3" data-group="objectType">
+              <button type="button" class="choice-card" data-value="Gyvenamasis namas">
+                <span class="choice-icon">⌂</span>
+                <strong>Gyvenamojo namo</strong>
+                <small>Visus metus gyvenimui</small>
+              </button>
+              <button type="button" class="choice-card" data-value="Sodo namelis / vasarnamis">
+                <span class="choice-icon">⌂</span>
+                <strong>Sodo namelio</strong>
+                <small>Poilsiui ir sezoniniam gyvenimui</small>
+              </button>
+              <button type="button" class="choice-card" data-value="Pirtis">
+                <span class="choice-icon">♨</span>
+                <strong>Pirties</strong>
+                <small>Poilsiui ir atsipalaidavimui</small>
+              </button>
+              <button type="button" class="choice-card" data-value="Ofisas">
+                <span class="choice-icon">▦</span>
+                <strong>Ofiso</strong>
+                <small>Darbui ar verslui</small>
+              </button>
+              <button type="button" class="choice-card" data-value="Garažas / stoginė">
+                <span class="choice-icon">▱</span>
+                <strong>Garažo / stoginės</strong>
+                <small>Automobiliui ar daiktams</small>
+              </button>
+              <button type="button" class="choice-card" data-value="Sandėliukas / kita">
+                <span class="choice-icon">□</span>
+                <strong>Kito pastato</strong>
+                <small>Sandėliukui ar kitai paskirčiai</small>
+              </button>
+            </div>
+
+            <div class="field-block compact-field">
+              <label for="project">Ar jau turite konkretų projektą?</label>
+              <select id="project" name="project">
+                <option value="">Pasirinkite, jei žinote</option>
+                <option>BERŽAS</option>
+                <option>MAUMEDIS</option>
+                <option>PAPRIKA</option>
+                <option>SEDULA</option>
+                <option>UOSIS</option>
+                <option>Kito / individualaus projekto</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="step" data-step="2">
+            <p class="step-label">02 · Projekto poreikis</p>
+            <h3>Papasakokite šiek tiek daugiau</h3>
+            <p class="step-help">Tai padės geriau įvertinti, kokio sprendimo jums reikia.</p>
+
+            <div class="field-block">
+              <label>Koks numatomas pastato plotas?</label>
+              <div class="option-row" data-group="area">
+                <button type="button" class="option-chip" data-value="Iki 20 m²">Iki 20 m²</button>
+                <button type="button" class="option-chip" data-value="20–40 m²">20–40 m²</button>
+                <button type="button" class="option-chip" data-value="40–60 m²">40–60 m²</button>
+                <button type="button" class="option-chip" data-value="60–100 m²">60–100 m²</button>
+                <button type="button" class="option-chip" data-value="100+ m²">100+ m²</button>
+                <button type="button" class="option-chip" data-value="Dar nežinau">Dar nežinau</button>
+              </div>
+            </div>
+
+            <div class="field-block">
+              <label>Kada planuojate naudoti pastatą?</label>
+              <div class="option-row" data-group="usage">
+                <button type="button" class="option-chip" data-value="Visus metus">Visus metus</button>
+                <button type="button" class="option-chip" data-value="Sezoniškai">Sezoniškai</button>
+                <button type="button" class="option-chip" data-value="Poilsiui">Poilsiui</button>
+                <button type="button" class="option-chip" data-value="Nuomai / verslui">Nuomai / verslui</button>
+                <button type="button" class="option-chip" data-value="Darbui">Darbui</button>
+              </div>
+            </div>
+
+            <div class="field-block">
+              <label>Ar jau turite sklypą?</label>
+              <div class="option-row" data-group="land">
+                <button type="button" class="option-chip" data-value="Taip">Taip</button>
+                <button type="button" class="option-chip" data-value="Dar ieškau">Dar ieškau</button>
+                <button type="button" class="option-chip" data-value="Nežinau">Nežinau / reikia konsultacijos</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="step" data-step="3">
+            <p class="step-label">03 · Įgyvendinimas</p>
+            <h3>Kur ir kaip planuojate įgyvendinti projektą?</h3>
+            <p class="step-help">Ši informacija padeda įvertinti pristatymą ir montavimą.</p>
+
+            <div class="two-col">
+              <div class="field-block">
+                <label for="location">Miestas / rajonas</label>
+                <input id="location" name="location" type="text" placeholder="Pvz. Klaipėdos r.">
+              </div>
+
+              <div class="field-block">
+                <label for="deadline">Kada norėtumėte pradėti?</label>
+                <select id="deadline" name="deadline">
+                  <option value="">Pasirinkite</option>
+                  <option>Artimiausiu metu</option>
+                  <option>Per 3 mėnesius</option>
+                  <option>Per 6 mėnesius</option>
+                  <option>Šiais metais</option>
+                  <option>Kitais metais</option>
+                  <option>Dar nesu nusprendęs</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-block">
+              <label>Ar reikalingas montavimas?</label>
+              <div class="option-row" data-group="installation">
+                <button type="button" class="option-chip" data-value="Taip, reikalingas">Taip, reikalingas</button>
+                <button type="button" class="option-chip" data-value="Ne, montuosiu pats">Ne, montuosiu pats</button>
+                <button type="button" class="option-chip" data-value="Dar nežinau">Dar nežinau</button>
+              </div>
+            </div>
+
+            <div class="field-block">
+              <label>Kokį biudžetą planuojate?</label>
+              <div class="option-row" data-group="budget">
+                <button type="button" class="option-chip" data-value="Iki 10 000 €">Iki 10 000 €</button>
+                <button type="button" class="option-chip" data-value="10 000–20 000 €">10 000–20 000 €</button>
+                <button type="button" class="option-chip" data-value="20 000–40 000 €">20 000–40 000 €</button>
+                <button type="button" class="option-chip" data-value="40 000 €+">40 000 €+</button>
+                <button type="button" class="option-chip" data-value="Dar nežinau">Dar nežinau</button>
+              </div>
+            </div>
+
+            <div class="field-block">
+              <label for="message">Papildoma informacija <span>(nebūtina)</span></label>
+              <textarea id="message" name="message" rows="4" placeholder="Jei turite konkrečių pageidavimų, parašykite juos čia..."></textarea>
+            </div>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="step" data-step="4">
+            <p class="step-label">04 · Kontaktai</p>
+            <h3>Kur galime su jumis susisiekti?</h3>
+            <p class="step-help">Užpildykite kontaktus ir peržiūrėkite savo užklausą prieš ją pateikiant.</p>
+
+            <div class="two-col">
+              <div class="field-block">
+                <label for="name">Vardas <b>*</b></label>
+                <input id="name" name="name" type="text" placeholder="Jūsų vardas">
+              </div>
+              <div class="field-block">
+                <label for="phone">Telefonas <b>*</b></label>
+                <input id="phone" name="phone" type="tel" placeholder="+370 ...">
+              </div>
+            </div>
+
+            <div class="field-block">
+              <label for="email">El. paštas <b>*</b></label>
+              <input id="email" name="email" type="email" placeholder="vardas@pastas.lt">
+            </div>
+
+            <div class="field-block">
+              <label>Kada patogiausia susisiekti?</label>
+              <div class="option-row" data-group="contactTime">
+                <button type="button" class="option-chip" data-value="Ryte">Ryte</button>
+                <button type="button" class="option-chip" data-value="Dieną">Dieną</button>
+                <button type="button" class="option-chip" data-value="Vakare">Vakare</button>
+                <button type="button" class="option-chip" data-value="Nesvarbu">Nesvarbu</button>
+              </div>
+            </div>
+
+            <div class="consent">
+              <input id="consent" type="checkbox">
+              <label for="consent">Sutinku, kad mano pateikti duomenys būtų naudojami klientų aptarnavimo tikslais.</label>
+            </div>
+
+            <div class="summary-card">
+              <div class="summary-head">
+                <span>Jūsų užklausos santrauka</span>
+                <button type="button" id="editSummary">Redaguoti</button>
+              </div>
+              <div id="summaryContent"></div>
+            </div>
+          </div>
+
+          <div class="form-error" id="formError" role="alert"></div>
+
+          <div class="form-navigation">
+            <button type="button" class="back-btn" id="backBtn">← Atgal</button>
+            <button type="button" class="next-btn" id="nextBtn">Tęsti <span>→</span></button>
+          </div>
+        </form>
+
+        <div class="success-screen" id="successScreen" hidden>
+          <div class="success-mark">✓</div>
+          <p class="form-kicker">AČIŪ</p>
+          <h2>Užklausa paruošta</h2>
+          <p>
+            Šiame demo pateikta informacija būtų perduodama EURILĖ komandai,
+            kad vadybininkas jau žinotų jūsų poreikį prieš susisiekdamas.
+          </p>
+          <div class="demo-note">Demo versija · Duomenys niekur nesiunčiami</div>
+          <button type="button" class="next-btn restart-btn" id="restartBtn">Peržiūrėti dar kartą</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <div class="footer-logo">EURILĖ <span>WOOD SOUL</span></div>
+      <h3>UAB „EURILĖ“</h3>
+      <p>Jaukoji g. 29, Kopūstų km.<br>Klaipėdos raj. LT96334, Lietuva</p>
+      <p>El. paštas: info@eurile.lt<br>Mob. tel.: +370 633 55501</p>
+    </div>
+    <div>
+      <h4>Nuorodos</h4>
+      <a href="#">Verslui</a><a href="#">Apie mus</a><a href="#">Kontaktai</a><a href="#">Atlikti projektai</a>
+    </div>
+    <div>
+      <h4>Kategorijos</h4>
+      <a href="#">Mediniai gyvenamieji namai</a><a href="#">Mediniai sodo nameliai ir vasarnamiai</a><a href="#">Medinės pirtys</a><a href="#">Mediniai garažai, stoginės</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
